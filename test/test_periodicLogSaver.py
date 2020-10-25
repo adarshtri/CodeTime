@@ -20,7 +20,7 @@ class TestPeriodicLogSaver(TestCase):
                 '2020-09-20': {'temp2.py': [[5000, 6000]]}}  # noqa: E128, E501
 
             BASE_PATH = os.path.abspath(os.path.dirname(__file__))
-            FILE_PATH = BASE_PATH + '/.temp_logs'
+            FILE_PATH = BASE_PATH + '/.sublime_logs'
 
             _ = logger.write_log_file(d)  # noqa: F841
 
