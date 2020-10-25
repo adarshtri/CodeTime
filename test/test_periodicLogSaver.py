@@ -22,7 +22,7 @@ class TestPeriodicLogSaver(TestCase):
             BASE_PATH = os.path.abspath(os.path.dirname(__file__))
             FILE_PATH = BASE_PATH + '/.temp_logs'
 
-            _ = logger.write_log_file(d, FILE_PATH)  # noqa: F841
+            _ = logger.write_log_file(d)  # noqa: F841
 
             arr = []
             for local_date, file_dict in d.items():
