@@ -18,6 +18,6 @@ install:
   - if ["$PCINSTALL" == true]; then /bin/sh travis.sh install_package_control; fi
 # command to run tests
 script:
-  - flake8 --statistics
+  - flake8 --max-line-length=150
   - /bin/sh travis.sh run_tests --coverage
   - python -m pytest
