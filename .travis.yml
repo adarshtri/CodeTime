@@ -20,4 +20,4 @@ install:
 script:
   - flake8 --max-line-length=150
   - sh travis.sh run_tests --coverage
-  - python -m pytest
+  # - python -m pytest
