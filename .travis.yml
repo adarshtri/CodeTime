@@ -12,6 +12,7 @@ install:
   - python setup.py install
   - pip install flake8==3.5
   - pip install black
+  - chmod +x sbin/travis.sh
   - /bin/sh sbin/travis.sh bootstrap
   - /bin/sh sbin/travis.sh install_color_scheme_unit
   - if ["$PCINSTALL" == true]; then /bin/sh sbin/travis.sh install_package_control; fi
