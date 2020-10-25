@@ -1,20 +1,18 @@
 import sublime
-import sys
 import os
+from code.SublimePlugin.periodicLogSaver import PeriodicLogSaver
 
 # from datetime import datetime as dt
 from unittest import TestCase
 # from unittest.mock import Mock, patch
 
-
-periodicLogSaver = sys.modules["CodeTime.SublimePlugin.periodicLogSaver"]
 version = sublime.version()
 
 
 class TestPeriodicLogSaver(TestCase):
 
     def test_write_log_file(self):
-        logger = periodicLogSaver()
+        logger = PeriodicLogSaver()
         try:
             d = {'2020-09-19': {'temp1.py': [[1000, 2000], [3000, 3200]]},
                 '2020-09-20': {'temp2.py': [[5000, 6000]]}}  # noqa: E128, E501
