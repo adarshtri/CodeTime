@@ -14,7 +14,7 @@ periodicLogSaver = sys.modules["CodeTime.code.SublimePlugin.periodicLogSaver"]
 class TestPeriodicLogSaver(TestCase):
 
     def test_write_log_file(self):
-        logger = periodicLogSaver()
+        logger = periodicLogSaver.PeriodicLogSaver()
         try:
             d = {'2020-09-19': {'temp1.py': [[1000, 2000], [3000, 3200]]},
                 '2020-09-20': {'temp2.py': [[5000, 6000]]}}  # noqa: E128, E501
