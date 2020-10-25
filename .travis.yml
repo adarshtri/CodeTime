@@ -15,9 +15,5 @@ install:
 
 script:
   - flake8 --max-line-length=150
-  - sh travis.sh run_tests --coverage
+  - sh travis.sh run_tests
 
-after_success:
-  - pip3 install coverage==4.5.4 codecov==2.0.15
-  - coveralls
-  - codecov
