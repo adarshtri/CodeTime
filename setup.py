@@ -11,6 +11,8 @@ def get_requirements(filename):
 
 
 setup(name='codeTime',
+      setup_requires=['pytest-runner', 'pytest-pylint'],
+      tests_require=['pytest', 'pylint'],
       version='1.0',
       description='CSC 510: Software Engineering Project 1',
       author='Omkar Kulkarni',
@@ -18,5 +20,4 @@ setup(name='codeTime',
       license="MIT",
       packages=find_packages(),
       python_requires=">=3.3",
-      install_requires=get_requirements("requirements.txt"),
-      include_package_data=True)
+      install_requires=get_requirements("requirements.txt"))
