@@ -15,7 +15,7 @@ class TestPeriodicLogSaver(TestCase):
 
     def test_write_log_file(self):
         BASE_PATH = os.path.join(os.path.expanduser('~'), '.codeTime')
-        FILE_PATH = os.path.join(BASE_PATH, '.sublime_logs')
+        FILE_PATH = os.path.join(BASE_PATH, '.temp_logs')
         logger = periodicLogSaver.PeriodicLogSaver(kwargs={'LOG_FILE_PATH': FILE_PATH})
         try:
             d = {'2020-09-19': {'temp1.py': [[1000, 2000], [3000, 3200]]},
