@@ -58,7 +58,7 @@ def show_graphs():
             [{"colspan": 2, "type": "table"}, None],
         ],
     )
-    ###############################- Pie Chart-
+    # Pie Chart
     durations = defaultdict(int)
     for file_path in logs_dict.keys():
         duration = logs_dict[file_path]["duration"]
@@ -125,4 +125,6 @@ def show_graphs():
 
     # my_dboard = dashboard.Dashboard()
     # my_dboard.get_preview()
+
+
 show_graphs()

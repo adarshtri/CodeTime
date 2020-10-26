@@ -6,8 +6,6 @@ import os
 from datetime import datetime as dt
 import sys
 import subprocess
-import json
-
 from .periodicLogSaver import PeriodicLogSaver
 
 # create data folder based on OS
@@ -86,7 +84,6 @@ def when_deactivated(view):
         )  # noqa: E501
 
 
-
 class CustomEventListener(sublime_plugin.EventListener):
     def on_post_save(self, view):
         print(view.file_name(), "just got saved")
@@ -155,7 +152,6 @@ class CustomEventListener(sublime_plugin.EventListener):
             )  # noqa: E501
 
 
-
 # view.run_command('dashboard')
 class DashboardCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -171,11 +167,7 @@ class DashboardCommand(sublime_plugin.TextCommand):
             )  # noqa: E501, F841
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
-            print(
-                "codeTime:DashboardCommand():run() {error} on line number:"
-                + " {lno}".format(error=str(e), lno=str(exc_tb.tb_lineno))
-            )  # noqa: E501
-
+            print("codeTime:DashboardCommand():run() {error} on line number: {lno}".format(error=str(e), lno=str(exc_tb.tb_lineno)))  # noqa: E501
 
 
 def plugin_loaded():
@@ -202,4 +194,3 @@ def plugin_loaded():
                 error=str(e), lno=str(exc_tb.tb_lineno)
             )
         )  # noqa: E501
-
