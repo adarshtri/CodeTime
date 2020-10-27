@@ -43,7 +43,8 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 ## What things have been done for Phase 2
 
-- The data generated is being sent to Django based server.
-- Local data analysis will be shifted to user dashboard on server.
-- Realtime analysis of the user's file.
+- The log data is sent on remote server.
+- Support for user portal / dashboard to gain insights.
+- Improved sublime plugin. 
+- Performance benchmarking plan.
 
