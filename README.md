@@ -36,7 +36,7 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 - Created the design and architecture of the project
 - Implemented the logic to collect the data in background
-- Implemented the code to generate the graphs to analyse the time spent. ([Current Working Dashboard](docs/CodeTimeDashboard.png))
+- Implemented the code to generate the graphs to analyse the time spent.
 - Integrated the code with sublime text editor
 - Unit tests
 - Build and Packaging of the plugin
