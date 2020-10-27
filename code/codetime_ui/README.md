@@ -7,23 +7,27 @@ The CodeTime User Dashboard
 
 Know which type of files have you worked on the most.
 Also, know on which day you spent more time programming.
-[Weekday&FileExtension](./../../docs/stats_1.png)
+
+![Weekday&FileExtension](./../../docs/stats_1.png)
 
 #### Recent Statistics Summary
 
 Visually summarizes your recent activity. Shows how much work has been
 accomplished in past 30 days in different files and different languages.
-[Recent Statistics](./../../docs/recent_status.png)
+
+![Recent Statistics](./../../docs/recent_status.png)
 
 #### Time Spent by the user on different files
 
 Know which files you worked on the most and by how much time.
-[Time Spent on files](./../../docs/time_spent_on_files.png)
+
+![Time Spent on files](./../../docs/time_spent_on_files.png)
 
 #### Summary of time spent on various coding languages
 
 Know which programming languages you worked on the most and by how much time.
-[Time Spent on Coding Languages](./../../docs/stats_1.png)
+
+![Time Spent on Coding Languages](./../../docs/stats_1.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
