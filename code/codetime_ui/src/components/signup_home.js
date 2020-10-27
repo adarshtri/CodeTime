@@ -27,7 +27,8 @@ export default class Signup_home extends Component{
 
     onFinish = (values) => {
         signup(values).then(data=>{
-            if(data["status"] === 200){
+
+            if(data["status"] === 201){
                 message.success({content: "Successfully Signed Up", duration: 2, style: {position: "fixed", left: "50%", top: "20%", color: "#316DC1"}})
             }
             else
