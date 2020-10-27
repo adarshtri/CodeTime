@@ -121,7 +121,7 @@ def handle_user_post(request):
 
         if serializer.is_valid():
             if request_type == "signup":
-                return_status = User.objects.create_user(request.data)
+                return_status = User.objects.create_user(serializer.validated_data)
 
                 if return_status == 0:
                     data = User.objects.get_user_from_username(
